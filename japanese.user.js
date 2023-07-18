@@ -4,8 +4,8 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://www.google.com/search?q=greasemonkey+script+how+to+create&oq=greasemonkey+script+how+to+create&aqs=chrome..69i57j0l5.4077j0j7&sourceid=chrome&ie=UTF-8
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
+// @updateURL https://github.com/myjwatcher/pext/raw/main/japanese.user.js
+// downloadURL https://github.com/myjwatcher/pext/raw/main/japanese.user.js
 // @grant        none
 // @include /https?:\/\/(www.)?nhentai.(net|xxx)\//
 // ==/UserScript==
