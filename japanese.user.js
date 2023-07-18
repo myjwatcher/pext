@@ -1,5 +1,7 @@
 // ==UserScript==
 // @name Japanse p redirect
+// @namespace https://github.com/myjwatcher
+// @desc redirect p to japanese
 // @include /https?:\/\/(www.)?nhentai.(net|xxx)\//
 // ==/UserScript==
 
