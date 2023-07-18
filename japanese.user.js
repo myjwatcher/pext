@@ -32,5 +32,11 @@ if (location.href.match(/^https:\/\/nhentai.net\/artist/)) {
   location.href = 'https://nhentai.net/search/?q=+language%3Ajapanese+artist%3A' + name
 }
 
+if (location.href.match(/^https:\/\/nhentai.net\/tag/)) {
+  const s = location.href.replace('https://', '').split('/')
+  const name = s[2].replace(/-/g, '+')
+  location.href = 'https://nhentai.net/search/?q=+language%3Ajapanese+tag%3A' + name
+}
+
     // Your code here...
 })();
