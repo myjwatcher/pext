@@ -10,8 +10,8 @@
 // @include /https?:\/\/(www.)?nhentai.(net|xxx)\//
 // ==/UserScript==
 
-
-console.log('pext run')
+(function() {
+'use strict';
 
 if (location.href.match(/^https:\/\/hentai2read.com\/[^\/]+\/$/)) {
   location.href = location.href + '1/'
@@ -40,3 +40,8 @@ if (location.href.match(/^https:\/\/nhentai.net\/artist/)) {
 //     }
 //   })
 // }
+
+  
+    // Your code here...
+})();
+
