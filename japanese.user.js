@@ -1,3 +1,7 @@
+// ==UserScript==
+// @name Japanse p redirect
+// @include /https?:\/\/(www.)?nhentai.(net|xxx)\//
+
 console.log('pext run')
 
 if (location.href.match(/^https:\/\/hentai2read.com\/[^\/]+\/$/)) {
