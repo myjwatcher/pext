@@ -1,6 +1,9 @@
 // ==UserScript==
 // @name Japanse p redirect
 // @include /https?:\/\/(www.)?nhentai.(net|xxx)\//
+// ==/UserScript==
+
+
 
 console.log('pext run')
 
