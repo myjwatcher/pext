@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name Japanse p redirect
-// @namespace https://github.com/myjwatcher
+// @name         Japanese p redirect
+// @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
@@ -11,7 +11,8 @@
 // ==/UserScript==
 
 (function() {
-'use strict';
+    'use strict';
+
 
 if (location.href.match(/^https:\/\/hentai2read.com\/[^\/]+\/$/)) {
   location.href = location.href + '1/'
@@ -30,18 +31,6 @@ if (location.href.match(/^https:\/\/nhentai.net\/artist/)) {
   const name = s[2].replace(/-/g, '+')
   location.href = 'https://nhentai.net/search/?q=+language%3Ajapanese+artist%3A' + name
 }
-  
 
-// if (location.href.match(/nhentai\.net/)) {
-//   document.querySelectorAll('.gallery').forEach(x=> {
-//     const a = x.querySelector('a')
-//     if (!a.href.includes('download')) {
-//       a.href = a.href += 'download'
-//     }
-//   })
-// }
-
-  
     // Your code here...
 })();
-
