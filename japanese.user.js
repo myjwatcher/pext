@@ -4,15 +4,16 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://www.google.com/search?q=greasemonkey+script+how+to+create&oq=greasemonkey+script+how+to+create&aqs=chrome..69i57j0l5.4077j0j7&sourceid=chrome&ie=UTF-8
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
 // @grant        none
-// @include /https?:\/\/(www.)?nhentai.(net|xxx)\//
+// @match https://www.nhentai.net/*
+// @match https://nhentai.net/*
 // ==/UserScript==
 
 (function() {
     'use strict';
 
+console.log('pext start')
 
 if (location.href.match(/^https:\/\/hentai2read.com\/[^\/]+\/$/)) {
   location.href = location.href + '1/'
@@ -38,5 +39,16 @@ if (location.href.match(/^https:\/\/nhentai.net\/tag/)) {
   location.href = 'https://nhentai.net/search/?q=+language%3Ajapanese+tag%3A' + name
 }
 
+if (location.href.match(/^https:\/\/nhentai.net\/parody/)) {
+  const s = location.href.replace('https://', '').split('/')
+  const name = s[2].replace(/-/g, '+')
+  location.href = 'https://nhentai.net/search/?q=+language%3Ajapanese+parody%3A' + name
+}
+
+if (location.href.match(/^https:\/\/nhentai.net\/character/)) {
+  const s = location.href.replace('https://', '').split('/')
+  const name = s[2].replace(/-/g, '+')
+  location.href = 'https://nhentai.net/search/?q=+language%3Ajapanese+character%3A' + name
+}
     // Your code here...
 })();
